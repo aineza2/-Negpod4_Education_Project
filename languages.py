@@ -74,6 +74,8 @@ language_problem_sets = {
         2: {"Mvura": "Water", "Denga": "Sky", "Dumbu": "Stomach"},
         3: {"Imba": "House", "Rwendo": "Journey", "Munhu": "Person"},
         4: {"Moto": "Fire", "Nyika": "Country", "Ruoko": "Hand"},
+        5: {"Maruva": "Flowers", "Musikana": "Girl", "Mukomana": "Boy"},
+        # Add more levels for Shona
     }
     # Add problem sets for other languages
 }

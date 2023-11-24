@@ -63,6 +63,7 @@ language_problem_sets = {
     },
     "Kinyarwanda": {
         1: {'Igitondo' : 'Morning', 'Inkoko' : 'Chicken', "Isake" : 'Rooster'}
+        2: {'Injangwe' : 'Cat', 'Imbwa' : 'Dog', 'Umuntu' : 'Person'}
     },
     # Add problem sets for other languages
 }

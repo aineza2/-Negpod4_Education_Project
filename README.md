@@ -32,4 +32,14 @@ The Language Vocabulary Trainer is a versatile and user-friendly app catering to
    ```
 
 Push this to github.
- Third commit 
+
+ ## Features
+
+- **Language Selection:** Choose from a variety of supported languages.
+  
+- **Dynamic Learning:** Gamified learning experience with user-level tracking.
+
+- **Error Handling:** Robust error handling and feedback mechanisms.
+
+- **Modular Structure:** Well-organized codebase for ease of maintenance.
+

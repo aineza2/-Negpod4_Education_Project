@@ -65,6 +65,7 @@ language_problem_sets = {
         1: {'Igitondo' : 'Morning', 'Inkoko' : 'Chicken', "Isake" : 'Rooster'}
         2: {'Injangwe' : 'Cat', 'Imbwa' : 'Dog', 'Umuntu' : 'Person'}
         3: {'Imbabazi' : 'Apologies', 'Ibiryo' : 'Food', 'Amazi' : 'Water'}
+        4: {'Igihugu' : 'Country', 'Indabyo' : 'Flowers', 'Ifi' : 'Fish'}
     },
     # Add problem sets for other languages
 }

@@ -11,3 +11,25 @@ The Language Vocabulary Trainer is a versatile and user-friendly app catering to
 - **Learning and Practice:** The program presents language learning problems to users, prompting them to input the English translation. Users receive instant feedback on the correctness of their answers.
 
 - **User Level Tracking:** The application dynamically tracks users' levels in the language learning process, adjusting based on their performance.
+
+## Getting Started
+
+1. **Installation:** Ensure you have Python installed on your system.
+
+2. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/language-vocabulary-trainer.git
+   ```
+
+3. **Navigate to the Project Directory:**
+   ```bash
+   cd language-vocabulary-trainer
+   ```
+
+4. **Run the Application:**
+   ```bash
+   python index.py
+   ```
+
+Push this to github.
+ Third commit 

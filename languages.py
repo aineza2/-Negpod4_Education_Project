@@ -69,5 +69,8 @@ language_problem_sets = {
         5: {'Imvura' : 'Rain', 'Umukobwa' : 'Girl', 'Umuhungu' : 'Boy'}
         # Add more levels of Kinyarwanda
     },
+    "Shona": {
+        1: {"Mamuka sei" : "Morning", "Huku" : "Chicken", "Jongwe" : "Rooster"}
+    }
     # Add problem sets for other languages
 }

@@ -77,7 +77,7 @@ language_problem_sets = {
         5: {"Maruva": "Flowers", "Musikana": "Girl", "Mukomana": "Boy"},
         # Add more levels for Shona
     },
-    "Ndebele":{
+    "Ndebele": {
         1: {"Sakubona": "Hello", "Ngiyaphila": "I'm fine", "Ngidanile": "I'm sad"},
         2: {"Yebo": "Yes", "Hatshi": "No", "Mhlamunye": "Maybe"},
         3: {"Buya": "Come", "Hamba": "Go", "Inyamazana": "Animal"},

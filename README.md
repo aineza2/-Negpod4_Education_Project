@@ -43,3 +43,13 @@ Push this to github.
 
 - **Modular Structure:** Well-organized codebase for ease of maintenance.
 
+## Contributing
+
+We welcome contributions to enhance the Language Vocabulary Trainer. To contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature-name.`
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature-name.`
+5. Submit a pull request.
+

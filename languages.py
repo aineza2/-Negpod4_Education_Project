@@ -71,6 +71,7 @@ language_problem_sets = {
     },
     "Shona": {
         1: {"Mamuka sei" : "Morning", "Huku" : "Chicken", "Jongwe" : "Rooster"}
+        2: {"Mvura" : "Water", "Denga" : "Sky", "Dumbu" : "Stomach"}
     }
     # Add problem sets for other languages
 }

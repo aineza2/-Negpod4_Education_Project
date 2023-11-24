@@ -2,8 +2,6 @@
 import random
 from languages import supported_languages, language_problem_sets
 
-
-
 # Define initial user level
 user_level = 1
 
@@ -20,8 +18,8 @@ def introduce_app():
         introduce_app()
 
 # Function to display language learning problems to the user
-def display_problem(language):
-    problem_set = language_problem_sets[language]
+def display_problem(language, level):
+    problem_set = language_problem_sets[language][level]
     word, translation = random.choice(list(problem_set.items()))
     print(f"Translate the word '{word}' to English.")
 
@@ -31,6 +29,38 @@ def display_problem(language):
 def get_user_input():
     user_input = input("Your answer: ").strip().lower()
     return user_input
+
+# Function to allow users to choose a language and level
+def choose_language_and_level():
+    print("\nChoose a language:")
+    for i, language in enumerate(supported_languages, start=1):
+        print(f"{i}. {language}")
+
+    language_choice = input("Enter the number of your choice: ")
+
+    if language_choice.isdigit() and 1 <= int(language_choice) <= len(supported_languages):
+        selected_language = supported_languages[int(language_choice) - 1]
+        selected_level = choose_level(selected_language)
+        return selected_language, selected_level
+    else:
+        print("Invalid choice. Please try again.")
+        return choose_language_and_level()
+
+# Function to allow users to choose a level for the selected language
+def choose_level(language):
+    levels = list(language_problem_sets[language].keys())
+    print(f"\nChoose a level for {language}:")
+    for i, level in enumerate(levels, start=1):
+        print(f"{i}. Level {level}")
+
+    level_choice = input("Enter the number of your choice: ")
+
+    if level_choice.isdigit() and 1 <= int(level_choice) <= len(levels):
+        selected_level = levels[int(level_choice) - 1]
+        return selected_level
+    else:
+        print("Invalid choice. Please try again.")
+        return choose_level(language)
 
 # Main menu function
 def main_menu():
@@ -59,36 +89,6 @@ def main_menu():
         print("Invalid choice. Please try again.")
         main_menu()
 
-# Function to allow users to choose a language
-def choose_language():
-    print("\nChoose a language:")
-    for i, language in enumerate(supported_languages, start=1):
-        print(f"{i}. {language}")
-
-    language_choice = input("Enter the number of your choice: ")
-
-    if language_choice.isdigit() and 1 <= int(language_choice) <= len(supported_languages):
-        selected_language = supported_languages[int(language_choice) - 1]
-        learn_and_practice(selected_language)
-    else:
-        print("Invalid choice. Please try again.")
-        choose_language()
-
-# Function to learn and practice a specific language
-def learn_and_practice(language):
-    print(f"\nYou have selected {language}.")
-    while True:
-        translation = display_problem(language)
-        user_input = get_user_input()
-
-        if user_input == "exit":
-            print("Exiting the Language Vocabulary Trainer. Goodbye!")
-            break
-
-        is_correct = check_answer(user_input, translation)
-        display_result(is_correct)
-        track_user_level(is_correct)
-
 # Function to handle Learn and Practice menu
 def learn_and_practice_menu():
     print("\nLearn and Practice Menu:")
@@ -99,12 +99,13 @@ def learn_and_practice_menu():
 
     if choice == "1":
         # Pick a Language
-        choose_language()
+        selected_language, selected_level = choose_language_and_level()
+        learn_and_practice(selected_language, selected_level)
 
     elif choice == "2":
-        # Start Practice
-        selected_language = random.choice(supported_languages)
-        learn_and_practice(selected_language)
+        # Start Practice (this option should not be here)
+        print("Invalid choice. Please try again.")
+        learn_and_practice_menu()
 
     elif choice == "3":
         # Back to Main Menu
@@ -115,17 +116,21 @@ def learn_and_practice_menu():
         learn_and_practice_menu()
 
 
-# Function to display language learning problems to the user
-def display_problem(language):
-    problem_set = language_problem_sets[language]
-    word, translation = random.choice(list(problem_set.items()))
-    print(f"Translate the word '{word}' to English.")
-    return translation
 
-# Function to obtain user input and confirm its correct format
-def get_user_input():
-    user_input = input("Your answer: ").strip().lower()
-    return user_input
+# Function to learn and practice a specific language
+def learn_and_practice(language, level):
+    print(f"\nYou have selected {language} at Level {level}.")
+    while True:
+        translation = display_problem(language, level)
+        user_input = get_user_input()
+
+        if user_input == "exit":
+            print("Exiting the Language Vocabulary Trainer. Goodbye!")
+            break
+
+        is_correct = check_answer(user_input, translation)
+        display_result(is_correct)
+        track_user_level(is_correct)
 
 # Function to check the correctness of the user's answers
 def check_answer(user_answer, correct_answer):

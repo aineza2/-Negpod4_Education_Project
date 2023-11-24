@@ -76,6 +76,14 @@ language_problem_sets = {
         4: {"Moto": "Fire", "Nyika": "Country", "Ruoko": "Hand"},
         5: {"Maruva": "Flowers", "Musikana": "Girl", "Mukomana": "Boy"},
         # Add more levels for Shona
-    }
+    },
+    "Ndebele":{
+        1: {"Sakubona": "Hello", "Ngiyaphila": "I'm fine", "Ngidanile": "I'm sad"},
+        2: {"Yebo": "Yes", "Hatshi": "No", "Mhlamunye": "Maybe"},
+        3: {"Buya": "Come", "Hamba": "Go", "Inyamazana": "Animal"},
+        4: {"Inja": "Dog", "Ibhiza": "Horse", "Inyama": "Meat"},
+        5: {"Umumbhu": "Maize", "Ibizo": "Name", "Ubuhle": "Beauty"},
+        # Add more levels for Ndebele
+    },
     # Add problem sets for other languages
 }

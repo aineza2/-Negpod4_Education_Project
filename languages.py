@@ -66,6 +66,8 @@ language_problem_sets = {
         2: {'Injangwe' : 'Cat', 'Imbwa' : 'Dog', 'Umuntu' : 'Person'}
         3: {'Imbabazi' : 'Apologies', 'Ibiryo' : 'Food', 'Amazi' : 'Water'}
         4: {'Igihugu' : 'Country', 'Indabyo' : 'Flowers', 'Ifi' : 'Fish'}
+        5: {'Imvura' : 'Rain', 'Umukobwa' : 'Girl', 'Umuhungu' : 'Boy'}
+        # Add more levels of Kinyarwanda
     },
     # Add problem sets for other languages
 }

@@ -1,7 +1,7 @@
 # languages.py
 
 # Define the list of languages supported by the app
-supported_languages = ["Spanish", "French", "German", "Japanese", "Yoruba", "Hausa", "Igbo"]
+supported_languages = ["Spanish", "French", "German", "Japanese", "Yoruba", "Hausa", "Igbo", "Kinyarwanda"]
 
 # Define a dictionary to store language problem sets (replace this with actual data)
 language_problem_sets = {
@@ -60,6 +60,9 @@ language_problem_sets = {
         4: {"Igu": "Fire", "Akwụkwọ": "Hand", "Ọgụ": "War"},
         5: {"Ọma": "Good", "Ikpọ": "Farm", "Ọkụ": "Tortoise"},
         # Add more levels for Igbo
+    },
+    "Kinyarwanda": {
+        1: {'Igitondo' : 'Morning', 'Inkoko' : 'Chicken', "Isake" : 'Rooster'}
     },
     # Add problem sets for other languages
 }

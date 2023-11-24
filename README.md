@@ -53,3 +53,16 @@ We welcome contributions to enhance the Language Vocabulary Trainer. To contribu
 4. Push to the branch: `git push origin feature-name.`
 5. Submit a pull request.
 
+## Issues
+
+If you encounter any issues or have suggestions for improvement, please open an issue in the [Issue Tracker](https://github.com/your-username/language-vocabulary-trainer/issues).
+
+## License
+
+This project is licensed under the [M.I.T. License](LICENSE.md).
+
+---
+
+**Happy Learning with the Language Vocabulary Trainer!**
+   
+

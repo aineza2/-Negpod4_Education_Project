@@ -160,7 +160,8 @@ def rules_and_guidelines():
     print("Welcome to the Vocabulary Trainer! Here are the rules and guidelines:\n")
     print("1. You will be presented with words in a foreign language.")
     print("2. Input the English translation in the provided format.")
-    print("3. Your goal is to master as many words as possible.\n")
+    print("3. Your goal is to master as many words as possible.")
+    print("4. You can choose a language and practice specific levels.")
     main_menu()
 
 # Run the main function when the script is executed

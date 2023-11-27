@@ -156,10 +156,11 @@ def track_user_level(is_correct):
 
 # Function to display rules and guidelines
 def rules_and_guidelines():
-    print("\nRules and Guidelines:")
-    print("- You will be presented with words in a foreign language.")
-    print("- Input the English translation in the provided format.")
-    print("- Your goal is to master as many words as possible.\n")
+    print("\t\tRules and Guidelines:\n")
+    print("Welcome to the Vocabulary Trainer! Here are the rules and guidelines:\n")
+    print("1. You will be presented with words in a foreign language.")
+    print("2. Input the English translation in the provided format.")
+    print("3. Your goal is to master as many words as possible.\n")
     main_menu()
 
 # Run the main function when the script is executed

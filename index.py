@@ -162,6 +162,9 @@ def rules_and_guidelines():
     print("2. Input the English translation in the provided format.")
     print("3. Your goal is to master as many words as possible.")
     print("4. You can choose a language and practice specific levels.")
+    print("5. Each correct answer increases your level, while incorrect answers decrease it.")
+    print("6. To exit at any time, type 'exit' as your answer.")
+
     main_menu()
 
 # Run the main function when the script is executed

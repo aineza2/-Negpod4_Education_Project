@@ -70,6 +70,7 @@ language_problem_sets = {
         6: {'Umugati' : 'Bread', 'Umuneke' : 'Banana', 'Imyenda' : 'Clothes'},
         7: {'Amafaranga' : 'Money', 'Igikapu' : 'Bag', 'Umuriro' : 'Fire'},
         8: {'Igitabo' : 'Book', 'Ikaramu' : 'Pen', 'Mudasobwa' : 'computer'},
+        9: {'Umuganga' : 'Doctor', 'Igikombe' : 'Cup', 'Isahani' : 'plate'},
         # Add more levels for Kinyarwanda
 
     },

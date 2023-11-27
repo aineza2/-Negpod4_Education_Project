@@ -164,6 +164,8 @@ def rules_and_guidelines():
     print("4. You can choose a language and practice specific levels.")
     print("5. Each correct answer increases your level, while incorrect answers decrease it.")
     print("6. To exit at any time, type 'exit' as your answer.")
+    print("7. Your progress is saved, and you can continue from where you left off.")
+    print("\nLet's start learning! Choose 'Learn and Practice' from the main menu.\n")
 
     main_menu()
 

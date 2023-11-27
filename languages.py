@@ -68,7 +68,8 @@ language_problem_sets = {
         4: {'Igihugu' : 'Country', 'Indabyo' : 'Flowers', 'Ifi' : 'Fish'},
         5: {'Imvura' : 'Rain', 'Umukobwa' : 'Girl', 'Umuhungu' : 'Boy'},
         6: {'Umugati' : 'Bread', 'Umuneke' : 'Banana', 'Imyenda' : 'Clothes'},
-        
+        7: {'Amafaranga' : 'Money', 'Igikapu' : 'Bag', 'Umuriro' : 'Fire'},
+
     },
     "Shona": {
         1: {"Mamuka sei": "Morning", "Huku": "Chicken", "Jongwe": "Rooster"},

@@ -67,7 +67,8 @@ language_problem_sets = {
         3: {'Imbabazi' : 'Apologies', 'Ibiryo' : 'Food', 'Amazi' : 'Water'},
         4: {'Igihugu' : 'Country', 'Indabyo' : 'Flowers', 'Ifi' : 'Fish'},
         5: {'Imvura' : 'Rain', 'Umukobwa' : 'Girl', 'Umuhungu' : 'Boy'},
-        # Add more levels of Kinyarwanda
+        6: {'Umugati' : 'Bread', 'Umuneke' : 'Banana', 'Imyenda' : 'Clothes'},
+        
     },
     "Shona": {
         1: {"Mamuka sei": "Morning", "Huku": "Chicken", "Jongwe": "Rooster"},

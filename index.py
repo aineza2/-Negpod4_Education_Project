@@ -1,4 +1,3 @@
-# Import necessary modules
 import random
 from languages import supported_languages, language_problem_sets
 

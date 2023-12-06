@@ -1,8 +1,8 @@
 import random
 from languages import supported_languages, language_problem_sets
+import user_management
 
-# Define initial user level
-user_level = 1
+current_user = None
 
 def handle_zero_input():
     while True:
@@ -21,15 +21,51 @@ def handle_zero_input():
             print("Invalid choice. Please try again.")
 
 def introduce_app():
+    global current_user
     print(f"Hello! Welcome to the Vocabulary Trainer.")
-    print("Press 0 to see other menu options.")
+    print("1. Register")
+    print("2. Login")
     menu_choice = input("Your choice: ")
 
-    if menu_choice == "0":
-        handle_zero_input()
+    if menu_choice == "1":
+        user_management.register_user()
+    if menu_choice in ["1", "2"]:
+        current_user, _ = user_management.login_user()
+        if current_user:
+            main_menu()
+        else:
+            print("Login failed. Please try again.")
+            introduce_app()
     else:
         print("Invalid choice. Please try again.")
         introduce_app()
+
+def main_menu():
+    global current_user
+    if current_user is None:
+        introduce_app()
+        return
+
+    user_data = user_management.load_user_data()
+    user_level = user_data.get(current_user, {}).get('level', 1)
+
+    print("\nMain Menu:")
+    print(f"Logged in as {current_user}. Current Level: {user_level}")
+
+    choice = input("Enter 1 to continue: ")
+    if choice == "1":
+        learn_and_practice_menu()
+    elif choice == "2":
+        rules_and_guidelines()
+    elif choice == "3":
+        print(f"\nYou are currently in Level {user_level}.\n")
+    elif choice == "4":
+        print("Exiting the Vocabulary Trainer. Goodbye!")
+        exit()
+    elif choice == "0":
+        handle_zero_input()
+    else:
+        print("Invalid choice. Please try again.")
 
 def display_problem(language, level):
     problem_set = language_problem_sets[language][level]
@@ -49,7 +85,6 @@ def choose_language_and_level():
         print(f"{i}. {language}")
 
     language_choice = input("Enter the number of your choice: ")
-
     if language_choice == "0":
         handle_zero_input()
     elif language_choice.isdigit() and 1 <= int(language_choice) <= len(supported_languages):
@@ -67,49 +102,22 @@ def choose_level(language):
         print(f"{i}. Level {level}")
 
     level_choice = input("Enter the number of your choice: ")
-
     if level_choice == "0":
         handle_zero_input()
     elif level_choice.isdigit() and 1 <= int(level_choice) <= len(levels):
-        selected_level = levels[int(level_choice) - 1]
-        return selected_level
+        return levels[int(level_choice) - 1]
     else:
         print("Invalid choice. Please try again.")
         return choose_level(language)
 
-def main_menu():
-    print("\nMain Menu:")
-    print("1. Learn and Practice")
-    print("2. Rules and Guidelines")
-    print("3. View Level")
-    print("4. Exit")
-
-    choice = input("Enter your choice: ")
-
-    if choice == "1":
-        learn_and_practice_menu()
-    elif choice == "2":
-        rules_and_guidelines()
-    elif choice == "3":
-        print(f"\nYou are currently in Level {user_level}.\n")
-        main_menu()
-    elif choice == "4":
-        print("Exiting the Vocabulary Trainer. Goodbye!")
-        exit()
-    elif choice == "0":
-        handle_zero_input()
-    else:
-        print("Invalid choice. Please try again.")
-        main_menu()
-
 def learn_and_practice_menu():
+    global current_user
     print("\nLearn and Practice Menu:")
     print("1. Pick a Language")
     print("2. Start Practice")
     print("3. Back to Main Menu")
 
     choice = input("Enter your choice: ")
-
     if choice == "1":
         selected_language, selected_level = choose_language_and_level()
         learn_and_practice(selected_language, selected_level)
@@ -119,7 +127,6 @@ def learn_and_practice_menu():
         handle_zero_input()
     else:
         print("Invalid choice. Please try again.")
-        learn_and_practice_menu()
 
 def learn_and_practice(language, level):
     print(f"\nYou have selected {language} at Level {level}.")
@@ -128,13 +135,13 @@ def learn_and_practice(language, level):
         user_input = get_user_input()
 
         if user_input == "0":
-            continue  # Continue will skip the rest of the loop and start over
+            continue
         elif user_input == "exit":
             break
 
         is_correct = check_answer(user_input, correct_answer)
-        display_result(is_correct, correct_answer)  # Pass the correct answer for feedback
-        track_user_level(is_correct, correct_answer)  # Pass the correct answer for tracking
+        display_result(is_correct, correct_answer)
+        track_user_level(is_correct, correct_answer)
 
 def check_answer(user_answer, correct_answer):
     return user_answer == correct_answer.lower()
@@ -146,20 +153,23 @@ def display_result(is_correct, correct_answer):
         print(f"Incorrect, the correct answer is '{correct_answer}'. Keep practicing.")
 
 def track_user_level(is_correct, correct_answer):
-    global user_level
+    global current_user
+    user_data = user_management.load_user_data()
+    user_level = user_data.get(current_user, {}).get('level', 1)
 
     if is_correct:
         user_level += 1
         print(f"Your level has increased to {user_level}.\n")
     else:
-        user_level -= 1
-        if user_level < 1:
-            print(f"Game over! The correct answer was '{correct_answer}'.")
-            print("Let's start over.")
-            user_level = 1  # Reset level to 1
+        if user_level == 1:
+            print("Game over! The correct answer was '{}'. Let's start over.".format(correct_answer))
+            user_management.update_user_level(current_user, 1)  # Reset level to 1
             introduce_app()  # Restart the game from the introduction
         else:
+            user_level -= 1
             print(f"Your level has decreased to {user_level}.\n")
+
+    user_management.update_user_level(current_user, user_level)
 
 def rules_and_guidelines():
     print("\t\tRules and Guidelines:\n")
@@ -172,7 +182,6 @@ def rules_and_guidelines():
     print("6. To exit at any time, type 'exit' as your answer.")
     print("7. Press 0 at any time to see the exit and main menu options.")
     print("\nLet's start learning! Choose 'Learn and Practice' from the main menu.\n")
-    main_menu()
 
 if __name__ == "__main__":
     introduce_app()

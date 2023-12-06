@@ -1,0 +1,10 @@
+{
+    "Lydia": {
+        "password": "$2b$12$kj8nw42TCQ4wTK1gcn8SjulyJ6GyL53F0dKoAG/98SC84XukMYTUy",
+        "level": 1
+    },
+    "esther": {
+        "password": "$2b$12$1RmdR7r99Tg78jd.Oec5p.jG4NIC6wHQegV6hARHVfl2MFDVwTkIW",
+        "level": 1
+    }
+}

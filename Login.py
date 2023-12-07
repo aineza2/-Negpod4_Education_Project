@@ -1,12 +1,14 @@
-import *
+import mysql.connector
 # database details
-host = "2c0f:eb68:621:c500:d83e:fe5e:c701:3934"
+host = "102.22.172.49"
+port = 3306
 user = "Remote"
 password = ""
 database = "Trail"
 # Forming a connection
 connection = mysql.connector.connect(
     host=host,
+    port=port,
     user=user,
     password=password,
     database=database

@@ -1,16 +1,16 @@
 import mysql.connector
 # database details
-host = "102.22.172.49"
+host = "127.0.0.1"
 port = 3306
-user = "Remote"
+user = "Remote_User"
 password = ""
 database = "Trail"
 # Forming a connection
 connection = mysql.connector.connect(
     host=host,
     port=port,
-    user=user,
     password=password,
+    user=user,
     database=database
 )
 # Cursor connection

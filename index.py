@@ -121,6 +121,14 @@ def learn_and_practice_menu():
     if choice == "1":
         selected_language, selected_level = choose_language_and_level()
         learn_and_practice(selected_language, selected_level)
+    elif choice == "2":
+        random_language = random.choice(supported_languages)
+        selected_level = user_management.get_user_level(current_user)
+        print(f"Randomly selected language: {random_language}")
+        learn_and_practice(random_language, selected_level)
+        user_management.record_language_choice(current_user, random_language)
+   
+    
     elif choice == "3":
         main_menu()
     elif choice == "0":
@@ -129,6 +137,10 @@ def learn_and_practice_menu():
         print("Invalid choice. Please try again.")
 
 def learn_and_practice(language, level):
+    max_level = max(language_problem_sets[language].keys())
+    if level > max_level:
+        level = max_level
+    print(f"\nYou have selected {language} at Level {level}.")
     print(f"\nYou have selected {language} at Level {level}.")
     while True:
         correct_answer = display_problem(language, level)

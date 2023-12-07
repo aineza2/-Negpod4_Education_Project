@@ -1,10 +1,14 @@
 {
     "Lydia": {
         "password": "$2b$12$kj8nw42TCQ4wTK1gcn8SjulyJ6GyL53F0dKoAG/98SC84XukMYTUy",
-        "level": 1
+        "level": 4
     },
     "esther": {
         "password": "$2b$12$1RmdR7r99Tg78jd.Oec5p.jG4NIC6wHQegV6hARHVfl2MFDVwTkIW",
         "level": 1
+    },
+    "Lydia02": {
+        "password": "$2b$12$Sx.lf./WNxOx73zXHLhLWOfP1gf6Tu2.jbTzhe9C7HfgjxQTrav06",
+        "level": 6
     }
 }

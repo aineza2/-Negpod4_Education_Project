@@ -50,7 +50,6 @@ Encounted a bug any or have suggestions for improvment? Please open an issue in 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.md).
+This project is licensed under the MIT License - feel free to explore, learn, and contribute!
 
-
-**Happy Learning with the Language Vocabulary Trainer!**
+Embark on your language learning journey with the Language Vocabulary Trainer - Happy Learning!

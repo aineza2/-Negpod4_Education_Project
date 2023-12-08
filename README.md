@@ -20,10 +20,13 @@ To get started with the Language Vocabulary Trainer, follow these steps:
    ```bash
    git clone https://github.com/your-username/language-vocabulary-trainer.git
 
-##Navigate to the Project Directory:
+##Navigate to the Project Directory
+ ```bash
 cd language-vocabulary-trainer
 
-##Run the Application:
+##Run the Application
+
+ ```bash
 python index.py
 
 ## Features

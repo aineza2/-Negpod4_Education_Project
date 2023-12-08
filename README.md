@@ -48,6 +48,15 @@ Contributions are welcome to further enhance the Language Vocabulary Trainer. To
 
 Encounted a bug any or have suggestions for improvment? Please open an issue in our [Issue Tracker](https://github.com/your-username/language-vocabulary-trainer/issues).
 
+## Authors
+
+- [Nicolle Marizani](https://github.com/nmarizani)
+- [Stella Habiyambere](https://github.com/Stella-Remember)
+- [Ghislaine Nagasaro](https://github.com/Ghyghi)
+- [Nadia Teta](https://github.com/NadiaTeta)
+- [Annabelle Ineza](https://github.com/aineza2)
+- [Lydia Ojoawo](https://github.com/Lydia02)
+
 ## License
 
 This project is licensed under the MIT License - feel free to explore, learn, and contribute!

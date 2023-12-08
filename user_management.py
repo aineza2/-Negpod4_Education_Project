@@ -39,7 +39,15 @@ def login_user():
     else:
         print("Invalid username or password.")
         return None, None
+def record_language_choice(username, language):
+    users_data = load_user_data()
+    if username in users_data:
+        users_data[username]['last_language'] = language
+        save_user_data(users_data)
 
+def get_user_level(username):
+    users_data = load_user_data()
+    return users_data.get(username, {}).get('level', 1)
 def update_user_level(username, new_level):
     users_data = load_user_data()
     if username in users_data:

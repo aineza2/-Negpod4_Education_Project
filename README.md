@@ -46,7 +46,7 @@ Contributions are welcome to further enhance the Language Vocabulary Trainer. To
 
 ## Issues
 
-Encounter any issues or have suggestions? Please open an issue in the [Issue Tracker](https://github.com/your-username/language-vocabulary-trainer/issues).
+Encounted a bug any or have suggestions for improvment? Please open an issue in the [Issue Tracker](https://github.com/your-username/language-vocabulary-trainer/issues).
 
 ## License
 

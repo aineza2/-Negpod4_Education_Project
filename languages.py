@@ -1,5 +1,6 @@
 # Define the list of languages supported by the app
-supported_languages = ["Spanish", "French", "German", "Japanese", "Yoruba", "Hausa", "Igbo", "Kinyarwanda", "Shona","Ndebele"]
+supported_languages = ["Spanish", "French", "German", "Japanese", "Yoruba", "Hausa", "Igbo", "Kinyarwanda", "Shona",
+                       "Ndebele"]
 
 # Define a dictionary to store language problem sets 
 language_problem_sets = {
@@ -60,20 +61,20 @@ language_problem_sets = {
       
     },
     "Kinyarwanda": {
-        1: {'Igitondo' : 'Morning', 'Inkoko' : 'Chicken', 'Isake' : 'Rooster', 'Umugati' : 'Bread', 'Umuneke' : 'Banana', 'Imyenda' : 'Clothes'},
-        2: {'Injangwe' : 'Cat', 'Imbwa' : 'Dog', 'Umuntu' : 'Person', 'Amafaranga' : 'Money', 'Igikapu' : 'Bag', 'Umuriro' : 'Fire'},
-        3: {'Imbabazi' : 'Apologies', 'Ibiryo' : 'Food', 'Amazi' : 'Water','Igitabo' : 'Book', 'Ikaramu' : 'Pen', 'Mudasobwa' : 'computer'},
-        4: {'Igihugu' : 'Country', 'Indabyo' : 'Flowers', 'Ifi' : 'Fish','Umuganga' : 'Doctor', 'Igikombe' : 'Cup', 'Isahani' : 'plate'},
-        5: {'Imvura' : 'Rain', 'Umukobwa' : 'Girl', 'Umuhungu' : 'Boy', 'Umuganga' : 'Doctor', 'Igikombe' : 'Cup', 'Isahani' : 'plate'},
+        1: {'Igitondo': 'Morning', 'Inkoko': 'Chicken', 'Isake': 'Rooster', 'Umugati': 'Bread', 'Umuneke': 'Banana'},
+        2: {'Injangwe': 'Cat', 'Imbwa': 'Dog', 'Umuntu': 'Person', 'Amafaranga': 'Money', 'Igikapu': 'Bag'},
+        3: {'Imbabazi': 'Apologies', 'Ibiryo': 'Food', 'Amazi': 'Water', 'Igitabo': 'Book', 'Ikaramu': 'Pen'},
+        4: {'Igihugu': 'Country', 'Indabyo': 'Flowers', 'Ifi': 'Fish', 'Umuganga': 'Doctor', 'Igikombe': 'Cup'},
+        5: {'Imvura': 'Rain', 'Umukobwa': 'Girl', 'Umuhungu': 'Boy', 'Umuganga': 'Doctor', 'Igikombe': 'Cup'},
 
 
     },
     "Shona": {
-        1: {"Mamuka sei": "Morning", "Huku": "Chicken", "Jongwe": "Rooster"},
-        2: {"Mvura": "Water", "Denga": "Sky", "Dumbu": "Stomach"},
-        3: {"Imba": "House", "Rwendo": "Journey", "Munhu": "Person"},
-        4: {"Moto": "Fire", "Nyika": "Country", "Ruoko": "Hand"},
-        5: {"Maruva": "Flowers", "Musikana": "Girl", "Mukomana": "Boy"},
+        1: {"Mamuka sei": "Morning", "Huku": "Chicken", "Jongwe": "Rooster", "Baba": "Father"},
+        2: {"Mvura": "Water", "Denga": "Sky", "Dumbu": "Stomach", "Amai": "Mother"},
+        3: {"Imba": "House", "Rwendo": "Journey", "Munhu": "Person", "Mwana": "Child"},
+        4: {"Moto": "Fire", "Nyika": "Country", "Ruoko": "Hand", "Chingwa": "Bread"},
+        5: {"Maruva": "Flowers", "Musikana": "Girl", "Mukomana": "Boy", "Ndokuda": "I love you"},
       
     },
     "Ndebele": {

@@ -72,9 +72,9 @@ language_problem_sets = {
     "Shona": {
         1: {"Mamuka sei": "Morning", "Huku": "Chicken", "Jongwe": "Rooster", "Baba": "Father"},
         2: {"Mvura": "Water", "Denga": "Sky", "Dumbu": "Stomach", "Amai": "Mother"},
-        3: {"Imba": "House", "Rwendo": "Journey", "Munhu": "Person"},
-        4: {"Moto": "Fire", "Nyika": "Country", "Ruoko": "Hand"},
-        5: {"Maruva": "Flowers", "Musikana": "Girl", "Mukomana": "Boy"},
+        3: {"Imba": "House", "Rwendo": "Journey", "Munhu": "Person", "Mwana": "Child"},
+        4: {"Moto": "Fire", "Nyika": "Country", "Ruoko": "Hand", "Chingwa": "Bread"},
+        5: {"Maruva": "Flowers", "Musikana": "Girl", "Mukomana": "Boy", "Ndokuda": "I love you"},
       
     },
     "Ndebele": {

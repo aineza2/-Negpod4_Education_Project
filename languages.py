@@ -41,7 +41,7 @@ language_problem_sets = {
         2: {"Omi": "Water", "Igba": "Time", "Ina": "Fire", "wura": "Gold"},
         3: {"Oruko": "Name", "Alẹ": "Land", "Ẹsẹ": "Food", "fadaka": "Silver"},
         4: {"Ìrò ayé": "World", "Ilẹ̀": "Earth", "Ododo": "Flower", "dodo":"Plantain"},
-        5: {"Ounje": "Meal", "ẹjẹ": "Blood", "Oyin": "Honey", "ogede":"Banana"},
+        5: {"Ounje": "Meal", "ẹjẹ": "Blood", "Oyin": "Honey", "ogede":"Banana", "Oba":"King"},
       
     },
     "Hausa": {

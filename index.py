@@ -3,8 +3,8 @@ from languages import supported_languages, language_problem_sets
 import user_management
 
 
-
 current_user = None
+
 
 def handle_zero_input():
     while True:
@@ -21,6 +21,7 @@ def handle_zero_input():
             exit()
         else:
             print("Invalid choice. Please try again.")
+
 
 def introduce_app():
     global current_user
@@ -41,6 +42,7 @@ def introduce_app():
     else:
         print("Invalid choice. Please try again.")
         introduce_app()
+
 
 def main_menu():
     global current_user
@@ -69,17 +71,20 @@ def main_menu():
     else:
         print("Invalid choice. Please try again.")
 
+
 def display_problem(language, level):
     problem_set = language_problem_sets[language][level]
     word, translation = random.choice(list(problem_set.items()))
     print(f"Translate the word '{word}' to English.")
     return translation
 
+
 def get_user_input():
     user_input = input("Your answer (press 0 to cancel): ").strip().lower()
     if user_input == "0":
         handle_zero_input()
     return user_input
+
 
 def choose_language_and_level():
     print("\nChoose a language:")
@@ -97,6 +102,7 @@ def choose_language_and_level():
         print("Invalid choice. Please try again.")
         return choose_language_and_level()
 
+
 def choose_level(language):
     levels = list(language_problem_sets[language].keys())
     print(f"\nChoose a level for {language}:")
@@ -111,6 +117,7 @@ def choose_level(language):
     else:
         print("Invalid choice. Please try again.")
         return choose_level(language)
+
 
 def learn_and_practice_menu():
     global current_user
@@ -129,14 +136,14 @@ def learn_and_practice_menu():
         print(f"Randomly selected language: {random_language}")
         learn_and_practice(random_language, selected_level)
         user_management.record_language_choice(current_user, random_language)
-   
-    
+
     elif choice == "3":
         main_menu()
     elif choice == "0":
         handle_zero_input()
     else:
         print("Invalid choice. Please try again.")
+
 
 def learn_and_practice(language, level):
     max_level = max(language_problem_sets[language].keys())
@@ -157,14 +164,17 @@ def learn_and_practice(language, level):
         display_result(is_correct, correct_answer)
         track_user_level(is_correct, correct_answer)
 
+
 def check_answer(user_answer, correct_answer):
     return user_answer == correct_answer.lower()
+
 
 def display_result(is_correct, correct_answer):
     if is_correct:
         print("Correct! Well done.")
     else:
         print(f"Incorrect, the correct answer is '{correct_answer}'. Keep practicing.")
+
 
 def track_user_level(is_correct, correct_answer):
     global current_user
@@ -185,6 +195,7 @@ def track_user_level(is_correct, correct_answer):
 
     user_management.update_user_level(current_user, user_level)
 
+
 def rules_and_guidelines():
     print("\t\tRules and Guidelines:\n")
     print("Welcome to the Vocabulary Trainer! Here are the rules and guidelines:\n")
@@ -196,6 +207,7 @@ def rules_and_guidelines():
     print("6. To exit at any time, type 'exit' as your answer.")
     print("7. Press 0 at any time to see the exit and main menu options.")
     print("\nLet's start learning! Choose 'Learn and Practice' from the main menu.\n")
+
 
 if __name__ == "__main__":
     introduce_app()

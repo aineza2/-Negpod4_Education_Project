@@ -1,7 +1,7 @@
 {
     "Lydia": {
         "password": "$2b$12$kj8nw42TCQ4wTK1gcn8SjulyJ6GyL53F0dKoAG/98SC84XukMYTUy",
-        "level": 4
+        "level": 7
     },
     "esther": {
         "password": "$2b$12$1RmdR7r99Tg78jd.Oec5p.jG4NIC6wHQegV6hARHVfl2MFDVwTkIW",
@@ -10,5 +10,17 @@
     "Lydia02": {
         "password": "$2b$12$Sx.lf./WNxOx73zXHLhLWOfP1gf6Tu2.jbTzhe9C7HfgjxQTrav06",
         "level": 6
+    },
+    "Nicolle": {
+        "password": "$2b$12$bF0pVSCdih5oX7cwC3G4xu3lQrhu9dGySxygNrK28nTn7QULvEZhO",
+        "level": 3
+    },
+    "Stella": {
+        "password": "$2b$12$oqNmZLgRN2FCSA1TJzwLj.hxmbhnsl4ZXhjM7SxW9FB6IDbmV61HK",
+        "level": 1
+    },
+    "stella@gmail.com": {
+        "password": "$2b$12$mmkjcbM82Ae4zqlrRKJ5DuY7KAlTf9KI9mr/hpGkZvZ.sRs9IwP7u",
+        "level": 1
     }
 }

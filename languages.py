@@ -1,5 +1,6 @@
 # Define the list of languages supported by the app
-supported_languages = ["Spanish", "French", "German", "Japanese", "Yoruba", "Hausa", "Igbo", "Kinyarwanda", "Shona","Ndebele"]
+supported_languages = ["Spanish", "French", "German", "Japanese", "Yoruba", "Hausa", "Igbo", "Kinyarwanda", "Shona",
+                       "Ndebele"]
 
 # Define a dictionary to store language problem sets 
 language_problem_sets = {
@@ -60,11 +61,11 @@ language_problem_sets = {
       
     },
     "Kinyarwanda": {
-        1: {'Igitondo' : 'Morning', 'Inkoko' : 'Chicken', 'Isake' : 'Rooster', 'Umugati' : 'Bread', 'Umuneke' : 'Banana', 'Imyenda' : 'Clothes'},
-        2: {'Injangwe' : 'Cat', 'Imbwa' : 'Dog', 'Umuntu' : 'Person', 'Amafaranga' : 'Money', 'Igikapu' : 'Bag', 'Umuriro' : 'Fire'},
-        3: {'Imbabazi' : 'Apologies', 'Ibiryo' : 'Food', 'Amazi' : 'Water','Igitabo' : 'Book', 'Ikaramu' : 'Pen', 'Mudasobwa' : 'computer'},
-        4: {'Igihugu' : 'Country', 'Indabyo' : 'Flowers', 'Ifi' : 'Fish','Umuganga' : 'Doctor', 'Igikombe' : 'Cup', 'Isahani' : 'plate'},
-        5: {'Imvura' : 'Rain', 'Umukobwa' : 'Girl', 'Umuhungu' : 'Boy', 'Umuganga' : 'Doctor', 'Igikombe' : 'Cup', 'Isahani' : 'plate'},
+        1: {'Igitondo': 'Morning', 'Inkoko': 'Chicken', 'Isake': 'Rooster', 'Umugati': 'Bread', 'Umuneke': 'Banana'},
+        2: {'Injangwe': 'Cat', 'Imbwa': 'Dog', 'Umuntu': 'Person', 'Amafaranga': 'Money', 'Igikapu': 'Bag'},
+        3: {'Imbabazi': 'Apologies', 'Ibiryo': 'Food', 'Amazi': 'Water', 'Igitabo': 'Book', 'Ikaramu': 'Pen'},
+        4: {'Igihugu': 'Country', 'Indabyo': 'Flowers', 'Ifi': 'Fish', 'Umuganga': 'Doctor', 'Igikombe': 'Cup'},
+        5: {'Imvura': 'Rain', 'Umukobwa': 'Girl', 'Umuhungu': 'Boy', 'Umuganga': 'Doctor', 'Igikombe': 'Cup'},
 
 
     },
